@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
 
     try {
         // Create a new person object
-        const newPerson = new Person(personDataata);
+        const newPerson = new Person(personData);
 
         // Save the new person to the database
         const response = await newPerson.save();
